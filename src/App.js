@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Weather from "./containers/Weather/Weather";
+import Weight from "./containers/Weight/Weight";
+import Nav from "./components/Nav/Nav";
+import "./App.css";
+import Length from "./containers/Length/Length";
+import Layout from "./hoc/Layout/Layout";
 
-function App() {
+const Home = () => <div>Home</div>;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Route path="/weather/" component={Weather} />
+        <Route path="/weight/" component={Weight} />
+        <Route path="/length/" component={Length} />
+        <Route path="/" exact component={Home} />
+      </Layout>
+    </Router>
   );
-}
+};
 
 export default App;

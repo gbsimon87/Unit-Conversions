@@ -1,0 +1,17 @@
+.inputs {
+  /* background: lightblue; */
+  text-align: center;
+}
+
+.inputs > div {
+  margin-bottom: 1em;
+}
+
+.inputs > div label {
+  margin-right: 1em;
+}
+
+.inputs > div input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}

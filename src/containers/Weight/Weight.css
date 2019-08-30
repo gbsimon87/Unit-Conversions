@@ -1,0 +1,17 @@
+.weight {
+  /* background: lightblue; */
+  text-align: center;
+}
+
+.weight > div {
+  margin-bottom: 1em;
+}
+
+.weight > div label {
+  margin-right: 1em;
+}
+
+.weight > div input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}

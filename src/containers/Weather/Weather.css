@@ -1,0 +1,17 @@
+.weather {
+  /* background: lightblue; */
+  text-align: center;
+}
+
+.weather > div {
+  margin-bottom: 1em;
+}
+
+.weather > div label {
+  margin-right: 1em;
+}
+
+.weather > div input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
